@@ -1,0 +1,11 @@
+<div class="container">
+    <%= 'しりとり' %>
+    <% %>
+    
+    <%= form_with url: index_path, method: :get, local: true do |f| %>
+     <%= f.text_field :shiritori_code, class: "index_form" %>
+    
+    <% end %>
+    
+    <p>結果:<%= @title %></p>
+</div>
